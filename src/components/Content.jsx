@@ -1,9 +1,8 @@
-import React from "react";
 import "./StyleContent.css";
 import "./StyleBtn.css";
 
 import ButtonsLogic from "./ButtonLogic";
-import Inputoutput from "./input-output";
+import InputOutput from "./InputOutput";
 
 function Content() {
   return (
@@ -17,9 +16,8 @@ function Content() {
         <div className="content-container">
           <div className="content-input-top-icon">w</div>
           <div className="content-input-text">
-            <Inputoutput />
+            <InputOutput />
           </div>
-          {/* <div className="content-output-morse"></div> */}
           <div className="content-alphabeth-buttons">
             <ButtonsLogic />
           </div>

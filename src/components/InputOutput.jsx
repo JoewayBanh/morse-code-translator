@@ -1,7 +1,8 @@
 // import Axios from 'axios';
-import React, { useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import MorseContext from "./context/MorseContext";
-export default function Inputoutput() {
+
+export default function InputOutput() {
   <audio ref="audio_tag" src="../public/a.mp3" controls autoPlay />;
 
   // This is Context variables defined in App.js
@@ -37,7 +38,7 @@ export default function Inputoutput() {
       }
       setMorseCode(translation);
     }
-  }, [textCode, letters, setMorseCode]);
+  }, [textCode, letters]);
 
   return (
     <>
