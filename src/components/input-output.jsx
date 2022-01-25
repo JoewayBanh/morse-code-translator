@@ -5,13 +5,8 @@ export default function Inputoutput() {
   <audio ref="audio_tag" src="../public/a.mp3" controls autoPlay />;
 
   // This is Context variables defined in App.js
-  const {
-    letters,
-    morseCode,
-    setMorseCode,
-    textCode,
-    setTextCode,
-  } = useContext(MorseContext);
+  const { letters, morseCode, setMorseCode, textCode, setTextCode } =
+    useContext(MorseContext);
 
   // This will handle the alphanumeric box onChange
   const handleInputText = (e) => {
@@ -43,14 +38,6 @@ export default function Inputoutput() {
       setMorseCode(translation);
     }
   }, [textCode, letters, setMorseCode]);
-
-  // This crap is not working, i get the WAV but can not play it
-  // const getMorseaudio = () => {
-  //     Axios.get('http://api.funtranslations.com/translate/morse/audio?text=joeway')
-  //     .then(element => { setMorseAudio(element.data.contents.translated.audio) })
-  //     .then(console.log(morseAudio))
-  //     }
-  //     getMorseaudio()
 
   return (
     <>
