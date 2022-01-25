@@ -42,18 +42,6 @@ export default function Inputoutput() {
 
 
 
-
-    // This crap is not working, i get the WAV but can not play it
-    // const getMorseaudio = () => {
-    //     Axios.get('http://api.funtranslations.com/translate/morse/audio?text=joeway')
-    //     .then(element => { setMorseAudio(element.data.contents.translated.audio) })
-    //     .then(console.log(morseAudio))
-    //     }
-    //     getMorseaudio()
-
-
-
-
 return (
     <>
 
